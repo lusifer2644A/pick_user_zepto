@@ -88,7 +88,7 @@ const UserSelect: FC<UserSelectProps> = ({ userList }) => {
             <div
                 id="userInput"
                 className={`border-b-4 rounded-md ${
-                    inputState.isMouseIn
+                    inputState.isMouseIn || inputState.isFocused
                         ? "border-blue-500 bg-gray-50 "
                         : "border-gray-500 bg-white"
                 } min-h-16 `}
